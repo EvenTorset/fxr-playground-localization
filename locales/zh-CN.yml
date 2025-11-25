@@ -1,16 +1,7 @@
 #region Locale info
-# This is the default locale. Other locales should be based on this one.
 # Contributors:
-# - CCCode
+# - Shiki
 
-#region Locale settings
-# This is the arguments passed to the Intl.DateTimeFormat constructor when a
-# date is converted to a short string. For example, these settings produce
-# strings like this: Nov 22, 2025
-# It is the same as calling the constructor like this:
-# new Intl.DateTimeFormat('en-US', { year: 'numeric', month: 'short', day: 'numeric' })
-# For more information, check the MDN page:
-# https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Intl/DateTimeFormat/DateTimeFormat
 locale.formats.date:
   - zh-CN
   - year: numeric
@@ -400,9 +391,15 @@ page.fxrViews.dashboard.sidebar.actions.revert.noChanges: 没有要还原的更�
 page.fxrViews.dashboard.sidebar.actions.delete.label: 删除
 
 #region Structure View
-page.fxrViews.structure.node.root.title: 根节点 (Root)
-page.fxrViews.structure.node.proxy.title: 代理节点 (Proxy)
-page.fxrViews.structure.node.levelsOfDetail.title: 细节层次 (LOD)
+page.fxrViews.structure.node.root.title: |
+  根节点
+  (Root)
+page.fxrViews.structure.node.proxy.title: |
+  代理节点
+  (Proxy)
+page.fxrViews.structure.node.levelsOfDetail.title: | 
+  细节层次
+  (LOD)
 page.fxrViews.structure.node.nodeEmitter.title: 节点发射器
 page.fxrViews.structure.node.nodeEmitter.subtitle.all: 发射所有子节点
 page.fxrViews.structure.node.nodeEmitter.subtitle.random: 发射一个随机子节点
@@ -411,47 +408,53 @@ page.fxrViews.structure.node.nodeEmitter.subtitle.unknown: 未知节点选择器
 page.fxrViews.structure.node.particle.title: 粒子
 page.fxrViews.structure.node.particleEmitter.title: 粒子发射器
 page.fxrViews.structure.node.soundEffect.title: 音效
-page.fxrViews.structure.node.transform.title: 变换 (Transform)
-page.fxrViews.structure.node.motion.title: 运动 (Motion)
+page.fxrViews.structure.node.transform.title: |
+  变换
+  (Transform)
+page.fxrViews.structure.node.motion.title: |
+  运动
+  (Motion)
 page.fxrViews.structure.node.attachToCamera.title: 附着到相机
 page.fxrViews.structure.node.forceMotion.title: 强制运动
 page.fxrViews.structure.node.unimplemented.title: 未实现
 page.fxrViews.structure.node.unimplemented.subtitle: 这是一个 Bug!请报告它!
-page.fxrViews.structure.node.unknownAppearance.title: |
-  未知/通用
-  外观
+page.fxrViews.structure.node.unknownAppearance.title: 未知/通用外观
 page.fxrViews.structure.node.empty.title: 空
 page.fxrViews.structure.node.group.title: 组
 page.fxrViews.structure.node.unknown.title: 未知
-page.fxrViews.structure.action.PointSprite: 点精灵 (Point Sprite)
+page.fxrViews.structure.action.PointSprite: |
+  点精灵
+ (Point Sprite)
 page.fxrViews.structure.action.Line: 线
 page.fxrViews.structure.action.QuadLine: 四边形线
-page.fxrViews.structure.action.BillboardEx: 公告板 (Billboard)
-page.fxrViews.structure.action.MultiTextureBillboardEx: |
-  多纹理
+page.fxrViews.structure.action.BillboardEx: |
   公告板
+  (Billboard)
+page.fxrViews.structure.action.MultiTextureBillboardEx: 多纹理公告板
 page.fxrViews.structure.action.Model: 模型
-page.fxrViews.structure.action.LegacyTracer: 旧版拖尾 (Legacy Tracer)
+page.fxrViews.structure.action.LegacyTracer: |
+  旧拖轨
+  (Legacy Tracer)
 page.fxrViews.structure.action.Distortion: 扭曲
 page.fxrViews.structure.action.RadialBlur: 径向模糊
 page.fxrViews.structure.action.PointLight: 点光源
-page.fxrViews.structure.action.GPUStandardParticle: |
-  GPU 标准
-  粒子发射器
-page.fxrViews.structure.action.GPUStandardCorrectParticle: |
-  GPU 标准
-  粒子发射器
-page.fxrViews.structure.action.LightShaft: 光柱 (Light Shaft)
-page.fxrViews.structure.action.GPUSparkParticle: |
-  GPU 火花
-  粒子发射器
-page.fxrViews.structure.action.GPUSparkCorrectParticle: |
-  GPU 火花
-  粒子发射器
-page.fxrViews.structure.action.Tracer: 拖尾 (Tracer)
+page.fxrViews.structure.action.GPUStandardParticle: GPU标准粒子发射器
+page.fxrViews.structure.action.GPUStandardCorrectParticle: GPU标准粒子发射器
+page.fxrViews.structure.action.LightShaft: |
+  光柱
+  (Light Shaft)
+page.fxrViews.structure.action.GPUSparkParticle: GPU火花粒子发射器
+page.fxrViews.structure.action.GPUSparkCorrectParticle: GPU火花粒子发射器
+page.fxrViews.structure.action.Tracer: |
+  拖轨
+  (Tracer)
 page.fxrViews.structure.action.WaterInteraction: 水面交互
-page.fxrViews.structure.action.LensFlare: 镜头光斑 (Lens Flare)
-page.fxrViews.structure.action.RichModel: 丰富模型 (Rich Model)
+page.fxrViews.structure.action.LensFlare: |
+  镜头光斑
+  (Lens Flare)
+page.fxrViews.structure.action.RichModel: |
+  丰富模型
+  (Rich Model)
 page.fxrViews.structure.action.CancelForce: 取消力场
 page.fxrViews.structure.action.WindForce: 风力
 page.fxrViews.structure.action.GravityForce: 重力
