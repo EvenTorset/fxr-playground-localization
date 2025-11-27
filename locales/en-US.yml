@@ -412,7 +412,7 @@ page.fxrViews.structure.node.proxy.title: Proxy
 page.fxrViews.structure.node.levelsOfDetail.title: Levels of Detail
 page.fxrViews.structure.node.nodeEmitter.title: Node Emitter
 page.fxrViews.structure.node.nodeEmitter.subtitle.all: Emits all child nodes
-page.fxrViews.structure.node.nodeEmitter.subtitle.random: Emits a random child nod
+page.fxrViews.structure.node.nodeEmitter.subtitle.random: Emits a random child node
 page.fxrViews.structure.node.nodeEmitter.subtitle.disabled: Disabled
 page.fxrViews.structure.node.nodeEmitter.subtitle.unknown: Unknown node selector
 page.fxrViews.structure.node.particle.title: Particle
