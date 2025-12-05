@@ -2,22 +2,44 @@
 # Contributors:
 # - Shiki
 
+#region Locale settings
 locale.formats.date:
   - zh-CN
   - year: numeric
     month: short
     day: numeric
+locale.formats.decimal:
+  - zh-CN
+  - style: decimal
+locale.formats.degree:
+  - zh-CN
+  - style: unit
+    unit: degree
+    unitDisplay: narrow
+locale.formats.meter:
+  - zh-CN
+  - style: unit
+    unit: meter
+    unitDisplay: short
+locale.formats.second:
+  - zh-CN
+  - style: unit
+    unit: second
+    unitDisplay: narrow
 
 #region App
 app.title: 特效工坊
 app.desc: 创建和修改《黑暗之魂3》、《只狼》、《艾尔登法环》、《装甲核心6》和《艾尔登法环:黑夜君临》的 FXR (特效) 文件
 
 #region Units
-unit.meter: "{n} 米"
 unit.file: "{n} 个文件 | {n} 个文件"
 
 #region Common
 common.or.keybind: "{first} 或 {second}"
+common.resource.textures.label: 纹理(Tex)
+common.resource.models.label: 模型(Model)
+common.resource.anibnds.label: 动画(Anibnd)
+common.resource.sounds.label: 声音(Sound)
 
 #region Message
 message.error.unknown: 未知错误。
@@ -357,13 +379,9 @@ page.fxrViews.dashboard.sidebar.sfxRefs.label: SFX 引用
 page.fxrViews.dashboard.sidebar.sfxRefs.ref.open: 打开 FXR
 page.fxrViews.dashboard.sidebar.sfxRefs.ref.fetchAndOpen: 获取并打开 FXR
 page.fxrViews.dashboard.sidebar.sfxRefs.noValue: 无
-page.fxrViews.dashboard.sidebar.textures.label: 纹理(Tex)
 page.fxrViews.dashboard.sidebar.textures.noValue: 无
-page.fxrViews.dashboard.sidebar.models.label: 模型(Model)
 page.fxrViews.dashboard.sidebar.models.noValue: 无
-page.fxrViews.dashboard.sidebar.anibnds.label: 动画(Anibnd)
 page.fxrViews.dashboard.sidebar.anibnds.noValue: 无
-page.fxrViews.dashboard.sidebar.sounds.label: 声音(Sound)
 page.fxrViews.dashboard.sidebar.sounds.noValue: 无
 page.fxrViews.dashboard.sidebar.nodeColors.label: 节点颜色
 page.fxrViews.dashboard.sidebar.nodeColors.noValue: 无

@@ -17,20 +17,42 @@ locale.formats.date:
     month: short
     day: numeric
 
+# Similar to the date format above, but using Intl.NumberFormat instead.
+locale.formats.decimal:
+  - en-US
+  - style: decimal
+locale.formats.degree:
+  - en-US
+  - style: unit
+    unit: degree
+    unitDisplay: narrow
+locale.formats.meter:
+  - en-US
+  - style: unit
+    unit: meter
+    unitDisplay: short
+locale.formats.second:
+  - en-US
+  - style: unit
+    unit: second
+    unitDisplay: narrow
+
 #region App
 app.title: FXR Playground
 app.desc: Create and modify FXR files for Dark Souls III, Sekiro, Elden Ring, Armored Core VI, and Elden Ring Nightreign
 
 
 #region Units
-unit.meter: "{n} m"
 unit.percent: "{n}%"
 unit.file: "{n} file | {n} files"
+unit.nodeInstance: "one instance | {n} instances"
 
 #region Common
 common.or.keybind: "{first} or {second}"
-
-
+common.resource.textures.label: Texture | Textures
+common.resource.models.label: Model | Models
+common.resource.anibnds.label: Anibnd | Anibnds
+common.resource.sounds.label: Sound | Sounds
 
 #region Message
 message.error.unknown: Unknown error.
@@ -275,7 +297,7 @@ panel.color.function.option.hueShift.title: Hue-shift
 panel.color.function.option.hueShift.desc: Hue-shift the original color.
 panel.color.function.option.replaceHue.title: Replace hue
 panel.color.function.option.replaceHue.desc: Replace the hue of the original color with that of the target color.
-panel.color.function.option.colorBlend.title: Replace hue and saturatio
+panel.color.function.option.colorBlend.title: Replace hue and saturation
 panel.color.function.option.colorBlend.desc: Replace the hue and saturation of the original color with that of the target color
 panel.color.function.option.scaleSaturation.title: Scale saturation
 panel.color.function.option.scaleSaturation.desc: Scale the saturation of the original color by a factor.
@@ -387,13 +409,9 @@ page.fxrViews.dashboard.sidebar.sfxRefs.label: SFX refs.
 page.fxrViews.dashboard.sidebar.sfxRefs.ref.open: Open FXR
 page.fxrViews.dashboard.sidebar.sfxRefs.ref.fetchAndOpen: Fetch and open FXR
 page.fxrViews.dashboard.sidebar.sfxRefs.noValue: none
-page.fxrViews.dashboard.sidebar.textures.label: Textures
 page.fxrViews.dashboard.sidebar.textures.noValue: none
-page.fxrViews.dashboard.sidebar.models.label: Models
 page.fxrViews.dashboard.sidebar.models.noValue: none
-page.fxrViews.dashboard.sidebar.anibnds.label: Anibnds
 page.fxrViews.dashboard.sidebar.anibnds.noValue: none
-page.fxrViews.dashboard.sidebar.sounds.label: Sounds
 page.fxrViews.dashboard.sidebar.sounds.noValue: none
 page.fxrViews.dashboard.sidebar.nodeColors.label: Node colors
 page.fxrViews.dashboard.sidebar.nodeColors.noValue: none
@@ -407,6 +425,7 @@ page.fxrViews.dashboard.sidebar.actions.revert.noChanges: No changes to revert
 page.fxrViews.dashboard.sidebar.actions.delete.label: Delete
 
 #region Structure View
+page.fxrViews.structure.node.unknownActionType: Unknown
 page.fxrViews.structure.node.root.title: Root
 page.fxrViews.structure.node.proxy.title: Proxy
 page.fxrViews.structure.node.levelsOfDetail.title: Levels of Detail
@@ -547,3 +566,105 @@ dialog.fetch.overwrite.label: Overwrite file
 dialog.fetch.action.overwrite: Overwrite
 dialog.fetch.action.confirm: Confirm
 dialog.fetch.action.cancel: Cancel
+
+#region Node tooltips
+nodeTooltip.unknownNodeAttributes: Unknown node attributes action.
+nodeTooltip.delay: Activates after {delay}.
+nodeTooltip.duration.static.finite: Lasts {duration}.
+nodeTooltip.duration.static.infinite: Lasts indefinitely.
+nodeTooltip.duration.range: Random duration {range}.
+nodeTooltip.duration.sequence: Animated duration {range}.
+nodeTooltip.duration.externalValue: Duration is incomputable due to usage of an external value modifier.
+nodeTooltip.duration.multiMod: Duration is unknown due to usage of multiple modifiers.
+nodeTooltip.duration.sequenceMod: Duration is unknown due to usage of modifiers with a sequence property.
+nodeTooltip.duration.unknownMod: Duration is unknown due to usage of unknown modifier.
+nodeTooltip.duration.invalid: |
+  Duration is invalid due to a modified infinite value. The node and its descendants may behave in unexpected ways.
+nodeTooltip.disabled: |
+  This node and all of its descendants are disabled in the selected state.
+nodeTooltip.root: |
+  Holds the entire effect and defines global
+  behavior for all descendant nodes.
+nodeTooltip.proxy: |
+  Acts like {sfx}.
+nodeTooltip.levelsOfDetail: |
+  Selects one of five child nodes to activate based on this node's distance to the camera and a set of thresholds for the child nodes.
+nodeTooltip.disabledEmitter: |
+  Does not emit anything due to a disabled emitter.
+nodeTooltip.unknownEmitter: |
+  Uses an unknown emitter type.
+nodeTooltip.nodeEmitter.all.oneTimeEmitter: |
+  Emits {instances} of each of its child nodes simultaneously.
+nodeTooltip.nodeEmitter.all.periodicEmitter.finite.interval: |
+  Emits {instances} of each of its child nodes every {interval} a total of {count} times.
+nodeTooltip.nodeEmitter.all.periodicEmitter.finite.zeroInterval: |
+  Emits {instances} of each of its child nodes every update cycle a total of {count} times.
+nodeTooltip.nodeEmitter.all.periodicEmitter.infinite.interval: |
+  Emits {instances} of each of its child nodes every {interval}.
+nodeTooltip.nodeEmitter.all.periodicEmitter.infinite.zeroInterval: |
+  Emits {instances} of each of its child nodes every update cycle.
+nodeTooltip.nodeEmitter.all.equalDistanceEmitter: |
+  Emits {instances} of each of its child nodes every {threshold} while moving.
+nodeTooltip.nodeEmitter.random.oneTimeEmitter: |
+  Emits {instances} of a random child node. | Emits {instances} of a random child node simultaneously.
+nodeTooltip.nodeEmitter.random.periodicEmitter.finite.interval: |
+  Emits {instances} of a random child node every {interval} a total of {count} times.
+nodeTooltip.nodeEmitter.random.periodicEmitter.finite.zeroInterval: |
+  Emits {instances} of a random child node every update cycle a total of {count} times.
+nodeTooltip.nodeEmitter.random.periodicEmitter.infinite.interval: |
+  Emits {instances} of a random child node every {interval}.
+nodeTooltip.nodeEmitter.random.periodicEmitter.infinite.zeroInterval: |
+  Emits {instances} of a random child node every update cycle.
+nodeTooltip.nodeEmitter.random.equalDistanceEmitter: |
+  Emits {instances} of a random child node every {threshold} while moving.
+nodeTooltip.nodeEmitter.unknownSelector: |
+  Uses an unknown node selector.
+nodeTooltip.basic.oneTimeEmitter: |
+  Emits one {type} particle.
+nodeTooltip.basic.periodicEmitter.single: |
+  Emits one {type} particle. | Emits {n} {type} particles.
+nodeTooltip.basic.periodicEmitter.finite.interval: |
+  Emits one {type} particle every {interval} a total of {count} times. | Emits {n} {type} particles every {interval} a total of {count} times.
+nodeTooltip.basic.periodicEmitter.finite.zeroInterval: |
+  Emits one {type} particle every update cycle a total of {count} times. | Emits {n} {type} particles every update cycle a total of {count} times.
+nodeTooltip.basic.periodicEmitter.infinite.interval: |
+  Emits one {type} particle every {interval}. | Emits {n} {type} particles every {interval}.
+nodeTooltip.basic.periodicEmitter.infinite.zeroInterval: |
+  Emits one {type} particle every update cycle. | Emits {n} {type} particles every update cycle.
+nodeTooltip.basic.equalDistanceEmitter: |
+  Emits one {type} particle every {threshold} while moving. | Emits {n} {type} particles every {threshold} while moving.
+nodeTooltip.basic.soundEvent: |
+  Plays the {soundEvent} sound event.
+nodeTooltip.basic.transform: |
+  Applies a transform to itself and descendant nodes.
+nodeTooltip.basic.motion: |
+  Applies motion to itself and descendant nodes.
+nodeTooltip.basic.attachToCamera: |
+  Attaches itself and descendant nodes to the camera.
+nodeTooltip.basic.forceMotion: |
+  Applies motion to itself and descendant nodes based on external forces.
+nodeTooltip.basic.empty.states: |
+  Does nothing in the selected state, but may behave differently in other states.
+nodeTooltip.basic.empty.noStates: |
+  Does nothing.
+nodeTooltip.basic.group: |
+  Acts as a container for its descendant nodes.
+nodeTooltip.basic.pointLight: |
+  Acts as a point light source.
+nodeTooltip.basic.spotLight: |
+  Acts as a spot light source.
+nodeTooltip.basic.unknown: |
+  Unknown behavior.
+nodeTooltip.basic.gpuParticles: |
+  Emits GPU particles.
+nodeTooltip.basic.lightShaft: |
+  Creates a light shaft effect.
+nodeTooltip.basic.waterInteraction: |
+  Simulates a water interaction.
+nodeTooltip.basic.lensFlare: |
+  Creates a lens flare.
+nodeTooltip.basic.forceEmitter: |
+  Emits a force.
+nodeTooltip.transform.translation: Translation
+nodeTooltip.transform.rotation: Rotation
+nodeTooltip.resources: Resources
