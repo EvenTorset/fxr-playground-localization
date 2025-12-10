@@ -214,7 +214,13 @@ reloader.settings.reloaderID.desc: |
 reloader.settings.reloaderForceID.title: Force ID
 reloader.settings.reloaderForceID.desc: |
   Reload the effect with a different ID.
-reloader.message.reloadSuccessful: FXR reloaded successfully. | {count} FXRs reloaded successfully.
+reloader.settings.reloaderDelay.title: Delay
+reloader.settings.reloaderDelay.desc: |
+  Wait this number of seconds before reloading the effect.
+
+  This may be useful if you need time to tab back into the game after reloading.
+reloader.message.reloadScheduled: Reloading FXR in {time}... | Reloading {n} FXRs in {time}...
+reloader.message.reloadSuccessful: FXR reloaded successfully. | {n} FXRs reloaded successfully.
 reloader.message.reloadError: "Failed to reload FXR: {err}"
 reloader.weaponIDLabel: "ID: {id}"
 

@@ -187,7 +187,7 @@ reloader.settings.reloaderID.desc: |
 reloader.settings.reloaderForceID.title: 强制 ID
 reloader.settings.reloaderForceID.desc: |
   使用不同的 ID 重载特效。
-reloader.message.reloadSuccessful: FXR 重载成功。 | {count} 个 FXR 重载成功。
+reloader.message.reloadSuccessful: FXR 重载成功。 | {n} 个 FXR 重载成功。
 reloader.message.reloadError: "FXR 重载失败：{err}"
 
 #region Sidebar
