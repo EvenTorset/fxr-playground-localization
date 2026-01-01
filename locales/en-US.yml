@@ -146,6 +146,14 @@ settings.defaultScriptType.option.js.title: JavaScript
 settings.defaultScriptType.option.js.desc: Usually easier to start out with.
 settings.defaultScriptType.option.ts.title: TypeScript
 settings.defaultScriptType.option.ts.desc: More features and editor support.
+settings.sessionFiles.title: Session files
+settings.sessionFiles.desc: |
+  Changes made to files in FXR Playground are automatically written to temporary files to keep track of them. This allows the page to be refreshed or opened in other browser tabs without losing any work.
+
+  These temporary session files are usually cleaned up automatically when saving the changes or deleting the files with the changes. However, if a bug has caused the page to crash before getting to the cleanup, the cleanup may not happen, and the temporary files are left in the file system.
+
+  This option allows you to manually delete all session files, which can be useful if there are any that got stuck due to a bug. This will also delete any unsaved changes you have made, and automatically refresh the page if it successfully cleaned up any files.
+settings.sessionFiles.action: Clear session files
 
 #region Reloader menu
 reloader.title: FXR WebSocket Reloader
