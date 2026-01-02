@@ -546,6 +546,14 @@ page.fxrViews.structure.sidebar.actions.target.option.node.subtitle: Actions app
 page.fxrViews.structure.sidebar.actions.deleteBranch: Delete branch
 page.fxrViews.structure.sidebar.actions.deleteNode: Delete node
 
+#region JSON View
+page.fxrViews.editor.widget.structureLink.title: Structure View
+page.fxrViews.editor.widget.structureLink.desc: Open the Structure View with this node selected.
+page.fxrViews.editor.widget.colorPreview.title: Color preview
+page.fxrViews.editor.widget.colorPreview.desc: Click to edit this color value.
+page.fxrViews.editor.widget.colorPreview.confirm: Confirm
+page.fxrViews.editor.widget.colorPreview.cancel: Cancel
+
 #region Bulk Actions
 page.bulk.title: Bulk Actions
 page.bulk.selectedFiles.label: Selected files
