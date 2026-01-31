@@ -386,7 +386,7 @@ panel.idOffset.autoRename.desc: |
 #region Panels common
 panel.common.showPreview: Show preview
 panel.common.hidePreview: Hide preview
-panel.common.resetOptions: Reset all options
+panel.common.resetOptions: Reset all panel options
 
 #region Welcome page
 page.welcome.section.updates.title: Updates
@@ -575,6 +575,7 @@ page.guides.gettingStarted: Getting Started
 page.guides.commonTasks: Common Tasks
 page.guides.playgroundFeatures: Playground Features
 page.guides.fxrTopics: FXR Topics
+page.guides.creation: Effect Creation
 
 #region Fetch dialog
 dialog.fetch.title: Fetch FXR
