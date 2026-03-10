@@ -481,7 +481,7 @@ page.fxrViews.structure.ctxMenu.copyColorPalette.option.branch: 从分支
 page.fxrViews.structure.ctxMenu.pasteColorPalette.label: 粘贴调色板...
 page.fxrViews.structure.ctxMenu.pasteColorPalette.option.node: 到节点
 page.fxrViews.structure.ctxMenu.pasteColorPalette.option.branch: 到分支
-page.fxrViews.structure.ctxMenu.deleteBranch: 删除分支
+page.fxrViews.structure.ctxMenu.deleteBranch.title: 删除分支
 page.fxrViews.structure.edge.level: 等级 {level}
 page.fxrViews.structure.edge.invalidLevel: 无效等级
 page.fxrViews.structure.edge.unkThreshold: 阈值不可用

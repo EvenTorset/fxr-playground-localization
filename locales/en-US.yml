@@ -267,6 +267,7 @@ sidebar.common.ctxMenu.save.keybindCondition: when selected
 sidebar.common.ctxMenu.revert.label: Revert changes
 sidebar.common.ctxMenu.download.label: Download
 sidebar.common.ctxMenu.delete.label: Delete
+sidebar.common.ctxMenu.delete.skipConfirmSubtitle: "{key} Skip confirmation"
 sidebar.common.ctxMenu.rename.label: Rename...
 sidebar.common.ctxMenu.copyPath.label: Copy path
 sidebar.scripts.ctxMenu.run.label: Run
@@ -437,6 +438,7 @@ page.fxrViews.dashboard.sidebar.actions.save.noChanges: No changes to save
 page.fxrViews.dashboard.sidebar.actions.revert.label: Revert
 page.fxrViews.dashboard.sidebar.actions.revert.noChanges: No changes to revert
 page.fxrViews.dashboard.sidebar.actions.delete.label: Delete
+page.fxrViews.dashboard.sidebar.actions.delete.skipConfirmSubtitle: "{key} Skip confirmation"
 
 #region Structure View
 page.fxrViews.structure.node.unknownActionType: Unknown
@@ -514,7 +516,8 @@ page.fxrViews.structure.ctxMenu.copyColorPalette.option.branch: From branch
 page.fxrViews.structure.ctxMenu.pasteColorPalette.label: Paste color palette...
 page.fxrViews.structure.ctxMenu.pasteColorPalette.option.node: On node
 page.fxrViews.structure.ctxMenu.pasteColorPalette.option.branch: On branch
-page.fxrViews.structure.ctxMenu.deleteBranch: Delete branch
+page.fxrViews.structure.ctxMenu.deleteBranch.title: Delete branch
+page.fxrViews.structure.ctxMenu.deleteBranch.skipConfirmSubtitle: "{key} Skip confirmation"
 page.fxrViews.structure.edge.level: Level {level}
 page.fxrViews.structure.edge.invalidLevel: Invalid Level
 page.fxrViews.structure.edge.unkThreshold: Threshold n/a
