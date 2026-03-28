@@ -70,7 +70,7 @@ message.prompt.deleteFile.title: Delete file
 message.prompt.deleteFile.content: |
   Are you sure you want to delete '{file}'?
 message.prompt.rename.title: New file name
-message.success.convertFXR.title: FXR converted
+message.success.convertFXR.title: FXR Converted
 message.success.convertFXR.content: |
   '{file}' converted to {game}
 
