@@ -277,6 +277,7 @@ sidebar.fxrFiles.ctxMenu.convertToGame.label: Convert to game...
 sidebar.fxrFiles.ctxMenu.copyColorPalette.label: Copy color palette
 sidebar.fxrFiles.ctxMenu.pasteColorPalette.label: Paste color palette
 sidebar.fxrFiles.ctxMenu.duplicate.label: Duplicate...
+sidebar.fxrFiles.ctxMenu.assetRepo.label: Set asset repository...
 
 #region File selection
 fileSelection.status.title: Selected FXR | Selected FXRs
@@ -430,6 +431,12 @@ page.fxrViews.dashboard.sidebar.anibnds.noValue: none
 page.fxrViews.dashboard.sidebar.sounds.noValue: none
 page.fxrViews.dashboard.sidebar.nodeColors.label: Node colors
 page.fxrViews.dashboard.sidebar.nodeColors.noValue: none
+page.fxrViews.dashboard.sidebar.actions.assetRepo.label: Asset repository
+page.fxrViews.dashboard.sidebar.actions.assetRepo.tooltip.title: Asset Repository
+page.fxrViews.dashboard.sidebar.actions.assetRepo.tooltip.desc: |
+  Choose what asset repository to use for this FXR file here. The asset repository is used to provide previews for resources referenced by the FXR file.
+
+  To add resources to an asset repository, drag and drop the textures into the page after converting them to the WebP format, or a ZIP file containing multiple of them. They need to have the file names used by the games, except with the {webp} extension instead of {dds} or {tpf}. When the files are dropped into the page, a dialog will open that allows you to select the repository to add them to.
 page.fxrViews.dashboard.sidebar.actions.download.label: Download
 page.fxrViews.dashboard.sidebar.actions.convertToGame.label: Convert to game...
 page.fxrViews.dashboard.sidebar.actions.replaceResources.label: Replace resources...
@@ -592,6 +599,27 @@ dialog.fetch.overwrite.label: Overwrite file
 dialog.fetch.action.overwrite: Overwrite
 dialog.fetch.action.confirm: Confirm
 dialog.fetch.action.cancel: Cancel
+
+#region Asset repo dialog
+dialog.assetRepo.title: Asset Repository
+dialog.assetRepo.prompt: |
+  What asset repository do you want to save these files to?
+dialog.assetRepo.desc: |
+  When FXR Playground needs to load a game asset to display a preview for it, it will try to load it from the asset repository that is selected for the FXR file.
+
+  A repository named after the FXR file's game is used by default. For example, if you open a new FXR file for Dark Souls III, the asset repository named {name} will be selected automatically.
+
+  To select a different repository for one or more FXR files, use the right-click context menu for the files in the sidebar.
+dialog.assetRepo.delete.title: Delete asset repository
+dialog.assetRepo.delete.desc: Are you sure you want to delete the '{repo}' asset repository?
+dialog.assetRepo.delete.error: Failed to delete asset repository
+dialog.assetRepo.clear.title: Clear game asset repository
+dialog.assetRepo.clear.desc: Are you sure you want to clear the '{repo}' asset repository?
+dialog.assetRepo.clear.error: Failed to clear asset repository
+dialog.assetRepo.create.error: Failed to create asset repository
+dialog.assetRepo.create.fieldLabel: New repository name
+dialog.assetRepo.create.buttonLabel: Create
+dialog.assetRepo.cancel: Cancel
 
 #region Node tooltips
 nodeTooltip.unknownNodeAttributes: Unknown node attributes action.
